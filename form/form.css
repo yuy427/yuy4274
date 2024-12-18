@@ -1,0 +1,16 @@
+.container {
+margin: 40px;
+}
+
+.spacer {
+margin-top: 10px;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+
+

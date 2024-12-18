@@ -1,0 +1,541 @@
+/* body{
+    background-image: url(./components/img/up.png)!important;
+} */
+
+.setup{
+    margin: 20px;
+}
+
+.delete-btn{
+    width: 20px;
+    height: 20px;
+    /* position: relative;
+    top: 0px;
+    left: 10px; */
+    margin: 0 auto;
+    margin-top: 5px;
+    display: block;
+}
+
+.delete-btn:hover{
+    cursor: pointer;
+}
+
+svg{
+    width: 15px;
+    height: 15px;
+    position: relative;
+    left: -5px;
+}
+
+.input-flex{
+    display: flex;
+}
+
+.change-flex{
+    display: flex;
+}
+
+.textbox{
+    display: block;
+    margin-bottom: 10px;
+}
+
+.submit-btn{
+    height: 20px;
+    color: #000000;
+    border: solid 1px #000000;
+    margin-left: 50px;
+    display: inline;
+}
+
+.direction{
+    display: flex;
+    /* flex-direction:row-reverse; */
+    align-items: baseline;
+    width: max-content;
+}
+
+.kintai-hover:hover{
+    cursor: pointer;
+}
+
+.kinmu {
+    display: none;
+}
+.kinmu-selected {
+    display: block;
+}
+
+.kinmu-hover:hover{
+    cursor: pointer;
+}
+
+.kaigi {
+    display: none;
+}
+.kaigi-selected {
+    display: block;
+}
+
+.kaigi-hover:hover{
+    cursor: pointer;
+}
+
+.addon{
+    display: block;
+}
+
+.addoff{
+    display: none;
+}
+
+.changeon{
+    display: block;
+}
+
+.changeoff{
+    display: none;
+}
+
+.zaseki-wrapper{
+    position: relative;
+    width: 150px;
+    /* display: block; */
+}
+
+/* .zaseki-wrapper:hover{
+    opacity: 0.5;
+} */
+
+.zaseki-size{
+    width: 150px;
+    height: 240px;
+}
+
+.zaseki-position{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    align-items: first baseline;
+    padding-top: 10px;
+}
+
+.sekibangou{
+    width: 100%;
+    text-align: center;
+}
+
+.busyo-indent{
+    text-indent: -3em;
+    padding-left: 3em;
+}
+
+.zaseki-forword{
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: baseline;
+    flex-direction: column;
+    width: 100px;
+    z-index: 1;
+    color: white;
+    /* background-color: #000000; */
+    /* background-image: url(./components/img/up.png)!important; */
+
+}
+
+.return-btn{
+    display: block;
+}
+
+.zero-color{
+    background-color: #800080;
+    border: solid 1px #000000;
+    color: white;
+}
+
+.dmc-color{
+    background-color: #993300;
+    border: solid 1px #000000;
+    color: white;
+}
+
+.post-color{
+    background-color: #FF6600;
+    border: solid 1px #000000;
+    color: white;
+}
+
+.nobel-color{
+    background-color: #000000;
+    border: solid 1px #000000;
+    color: white
+}
+
+.yuri-color{
+    background-color: #FF00FF;
+    border: solid 1px #000000;
+    color: white
+}
+
+.gateau-color{
+    background-color: #00B0F0;
+    border: solid 1px #000000;
+    color: white;
+}
+
+.raitu-color{
+    background-color: #99CC00;
+    border: solid 1px #000000;
+    color: white;
+}
+
+.kaigai-color{
+    background-color: #305496;
+    border: solid 1px #000000;
+    color: white;
+}
+
+.media-color{
+    background-color: #C00000;
+    border: solid 1px #000000;
+    color: white;
+}
+
+.hanbai-color{
+    background-color: #0000FF;
+    border: solid 1px #000000;
+    color: white;
+}
+
+.hensyuu-color{
+    background-color: #FF0000;
+    border: solid 1px #000000;
+    color: white;
+}
+
+.keiei-color{
+    background-color: #008080;
+    border: solid 1px #000000;
+    color: white;
+}
+
+.soumu-color{
+    background-color: #CC99FF;
+    border: solid 1px #000000;
+    color: white;
+}
+
+.tree-wrapper{
+    position: absolute;
+    bottom: 31px;
+    left: -17px;
+}
+
+.tree-active-wrapper{
+    position: absolute;
+    bottom: 80px;
+    left: -17px;
+    width: 13px;
+    height: 13px;
+}
+
+.tree{
+    position: relative;
+    top: 2px;
+    width: 13px;
+    height: 13px;
+    padding: 0;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    background-image: url(./components/img/up.png);
+    background-position: 50% 50%;
+    background-size: 13px 10px;
+    background-repeat: no-repeat;
+    z-index: 2;
+}
+
+.tree:hover{
+    cursor: pointer;
+}
+
+.tree-active{
+    position: relative;
+    top: -1px;
+    width: 13px;
+    height: 13px;
+    padding: 0;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    background-image: url(./components/img/right.png);
+    background-position: 50% 50%;
+    background-size: 7px 10px;
+    background-repeat: no-repeat;
+    z-index: 2;
+}
+
+.tree-active:hover{
+    cursor: pointer;
+}
+
+table{
+    border-collapse: collapse; 
+    margin: 50px;
+}
+
+th, td{
+    border: solid 5px #000000;
+    padding: 5px;
+}
+
+.table-display{
+    width: 4795px;
+    table-layout: fixed;
+    position: relative;
+    top: 100px;
+}
+
+.table-display th,.table-display td{
+    width: 130px;
+    height: 100px;
+    text-align: center;
+    font-size: 60px;
+}
+
+.table-display .off-btn{
+    width: 135px;
+    height: 100px;
+    font-size: 50px;
+}
+
+.changebutton-wrapper{
+    width: max-content;
+}
+
+.zaseki-on > div > div{
+    margin: 0 auto;
+}
+
+.zaseki-forword{
+    text-align: left;
+    font-size: 15px;
+    /* margin: 0!important; */
+}
+
+.comment{
+    width: 92%;
+    /* height: 20px; */
+    resize: none;
+    border: solid 1px #000000;
+    font-size: 9px;
+    position: absolute;
+    top: 95px;
+    left: 3px;
+    z-index: 1;
+}
+
+.zaseki-on{
+    display: block;
+    margin: 0 auto;
+}
+
+.zaseki-off{
+    display: none;
+}
+
+.ID-on{
+    display: block;
+}
+
+.ID-off{
+    display: none;
+}
+
+.title1{
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 1800px;
+}
+
+.title1_wrapper{
+    width: 4895px;
+    height: 325px;
+    /* background-color: #00FFFF; */
+}
+
+.title2{
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: max-content;
+}
+
+.title2_wrapper{
+    width: 4795px;
+    height: 50px;
+    /* background-color: #00FFFF; */
+}
+
+.tableoff .sekigaeon{
+    display: block;
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: max-content;
+}
+
+.tableoff .sekigaeoff{
+    display: none;
+}
+
+.tableon .sekigaeon,
+.tableon .sekigaeoff{
+    display: none;
+}
+
+.todolist-space{
+    width: 100vw;
+    height:270px;
+    /* overflow: scroll; */
+    overflow-y: hidden;
+}
+
+.passwordinput{
+    width: 275px;
+}
+
+.passwordon button{
+    display: inline;
+}
+
+.passwordoff button{
+    display: none;
+}
+
+.btn-wrapper {
+    width: 4795px;
+}
+
+.btn-wrapper .tableon{
+    display: block;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+.btn-wrapper .tableon:hover{
+    cursor: pointer;
+}
+
+.btn-wrapper .tableoff {
+    display: none;
+}
+
+.tableon .table-display{
+    display: block;
+}
+
+.tableoff .table-display{
+    display: none;
+}
+
+.title1 .btn-wrapper{
+    display: flex;
+    align-items: center;
+    width: max-content;
+}
+
+.btn-wrapper .tree-active{
+    width: 40px;
+    height: 40px;
+    background-size: 15px 25px;
+}
+
+.btn-wrapper .tree{
+    width: 40px;
+    height: 40px;
+    background-size: 25px 15px;
+}
+
+.tree2-block{
+    display: block;
+}
+
+.tree2-none{
+    display: none;
+}
+
+.title1_wrapper_wrapper-active .title1_wrapper{
+    height: 640px;
+}
+
+.title1_wrapper_wrapper .title1_wrapper{
+    height: 100px;
+}
+
+.todolist_wrapper-active{
+    display: block;
+}
+
+.todolist_wrapper{
+    display: none;
+}
+
+.busyo-select{
+    margin-bottom: 10px;
+}
+
+.busyo-select:hover{
+    cursor: pointer;
+}
+
+.submit-btn:hover{
+    cursor: pointer;
+}
+
+.return-btn{
+    margin: 10px 0;
+}
+
+.return-btn:hover{
+    cursor: pointer;
+}
+
+tr{
+    border: solid 10px #000000;
+    border-top: none;
+    border-bottom: none;
+}
+
+thead{
+    border: solid 10px #000000;
+    border-bottom: none;
+}
+
+.remote11{
+    border: solid 10px #FF0000;
+    border-bottom: none;
+}
+
+.remote12{
+    border: solid 10px #FF0000;
+    border-top: none;
+}
+
+.rimote-tile{
+    color: #FF0000;
+    font-weight: bold;
+}
+
+.select{
+    border: solid 10px #ff0000;
+}
+
+/* .notselect{
+    margin: 10px;
+} */
+
